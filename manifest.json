@@ -1,0 +1,18 @@
+{
+   "name": "Developer History Debugging",
+   "description": "Dumps history objects to console",
+   "version": "0.1",
+   "manifest_version": 2,
+   "incognito": "split",
+   "background": {
+      "persistent": false,
+      "scripts": [ "background.js" ]
+   },
+   "commands": {
+   },
+   "content_scripts": [{
+     "js": ["history_inject.js"],
+     "matches": ["*"]
+   }],
+   "permissions": [ "webNavigation", "tabs" ]
+}
