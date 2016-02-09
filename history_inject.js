@@ -15,4 +15,4 @@ var runTimeListener = function(request, sender, sendResponse) {
   historyItemDebug(type, historyItem);
 };
 
-chrome.runtime.onMessage.addListener(historyItemDebug);
+chrome.runtime.onMessage.addListener(runTimeListener);

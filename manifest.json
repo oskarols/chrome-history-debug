@@ -12,7 +12,7 @@
    },
    "content_scripts": [{
      "js": ["history_inject.js"],
-     "matches": ["*"]
+     "matches": ["*://*/*"]
    }],
    "permissions": [ "webNavigation", "tabs" ]
 }
